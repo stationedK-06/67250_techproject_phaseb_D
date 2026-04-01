@@ -59,3 +59,14 @@ function addYear(){
     document.getElementById("copyYear").innerHTML = new Date().getFullYear() + "MonoMuse. All right reserved.";
 }
 addYear();
+
+var col = document.querySelectorAll('*')[0];
+
+const color123 = ["red", "blue", "yellow", "green", "white", "black", "AliceBlue", "AntiqueWhite", "Aqua", "Aquamarine", "Azure", "Beige", "Bisque", "BlanchedAlmond", "BlueViolet", "Brown", "BurlyWood", "CadetBlue"];
+let isWhite = true;
+let k = 0;
+setInterval(() => {
+  col.style.backgroundColor = color123[k];
+  k = k + 1;
+  if(k >= color123.length) k = 0;
+}, 50);

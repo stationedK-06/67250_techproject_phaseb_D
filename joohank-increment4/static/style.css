@@ -1,7 +1,7 @@
 * {
   padding: 5px;
   margin: 5px;
-  background: #0b0b0c;
+  background: red;
   color:  #f5f5f7;
   
 }
@@ -47,4 +47,35 @@ tr:nth-child(even) {
 form * {
   margin: auto;
   text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'nav_bar nav_bar'
+    'main main-img'
+    'footer footer';
+  background-color: red;
+}
+
+.header {
+   grid-area: header; 
+   background-color: red;
+}
+.nav_bar {
+   grid-area: nav_bar; 
+   background-color: red;
+}
+.main {
+  grid-area: main; 
+  background-color: red;
+}
+.main_img {
+   grid-area: main-img; 
+   background-color:red;
+}
+.footer {
+   grid-area: footer;
+   background-color:red;
 }
