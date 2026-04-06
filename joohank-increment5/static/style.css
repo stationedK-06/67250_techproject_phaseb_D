@@ -48,7 +48,10 @@ nav a:hover {
 
 .active {
     color: #3D4127;
-    font-weight: 400;
+    font-weight: 700;
+    padding: 8px 10px;
+    border: 1px solid #3D4127;
+    border-radius: 12px;
 }
 
 
