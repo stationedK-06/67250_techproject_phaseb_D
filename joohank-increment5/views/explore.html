@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="../static/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbu33VDvKOP0ebNihdRZX3DgkUfKKyCto&libraries=marker&callback=initMap&loading=async" async></script>
 </head>
 <body onload="addYear()">
     <div class="container">
@@ -21,12 +23,13 @@
             <a href="../views/exhibitions.html">Exhibitions</a>
             <a href="../views/tickets.html">Buy Tickets</a>
             <a href="../views/checkout.html">Checkout</a>
+            <a href="javascript:void(0)" class="hamburger" onclick="toggleNav()">&#9776;</a>
         </nav>
         <main class="main">
             <figure class="main_img">
                 <img src="../static/images/explore_html/Museum Image.png" alt="MonoMuse Museum">
             </figure>
-            <section>
+            <iframe class="ifrm" src="https://www.youtube.com/embed/51G1a8ujdUc?si=Zm3CMoVKshNx4eHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>            <section>
                 <h2>Mission Statement</h2>
                 <p>
                     MonoMuse is dedicated to exploring the evolving relationship between art, technology, and society. Our mission is to inspire curiosity and creativity by showcasing innovative exhibitions that highlight how digital tools, emerging technologies, and human imagination shape the future of artistic expression.
@@ -39,6 +42,10 @@
                     <li>2018: Launch of the Interactive Media Lab, allowing visitors to experiment with creative coding.</li>
                     <li>2016: MonoMuse opens its doors with its first exhibition on digital storytelling.</li>
                 </ul>
+            </section>
+            <section>
+                <h2>Visit Us</h2>
+                <div id="map"></div>
             </section>
         </main>
         <footer class="footer">

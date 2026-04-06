@@ -4,38 +4,41 @@
     <link rel="stylesheet" href="../static/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MonoMuse - Checkout</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="../static/script.js" defer></script>
 </head>
 <body onload="addYear()">
-    <h1>
-        Checkout
-    </h1>
-    <nav>
-		<a href="../index.html">Home</a>
-		<a href="../views/explore.html">Explore</a>
-		<a href="../views/exhibitions.html">Exhibitions</a>
-		<a href="../views/tickets.html">Buy Tickets</a>
-		<a id="navselected" href="../views/checkout.html">Checkout</a>
-	</nav>
-    <form action="und">
-        <label for="name">Name: (required) </label><br>
-        <input type="text" id="name" name="name"><br>
-        <p></p>
-        <label for="email">Email: (required)</label><br>
-        <input type="email" id="email" name="email"><br>
-        <p></p>
-        <label for="quantity">Ticket Quantity: (required)</label><br>
-        <input type="number" id="quantity" name="quantity">
-    </form>
-    <p></p>
-    <button type="button">Submit</button>
-    <footer>
-    <p id="copyYear">  MonoMuse. All rights reserved. </p>
-    </footer>
+    <div class="container">
+        <header class="header">
+            <h1>Checkout</h1>
+        </header>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="../views/explore.html">Explore</a>
+            <a href="../views/exhibitions.html">Exhibitions</a>
+            <a href="../views/tickets.html">Buy Tickets</a>
+            <a href="../views/checkout.html">Checkout</a>
+        </nav>
+        <main class="main">
+            <form>
+                <label for="name">Name: (required)</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <br>
+                <label for="email">Email: (required)</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <br>
+                <label for="quantity">Ticket Quantity: (required)</label><br>
+                <input type="number" id="quantity" name="quantity" min="1" required><br>
+                <br>
+                <button type="button" onclick="alert('Redirecting to payment system.')">Submit</button>
+            </form>
+        </main>
+        <footer class="footer">
+            <p id="copyYear">MonoMuse. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
-
 </html>

@@ -1,81 +1,116 @@
 * {
-  padding: 5px;
-  margin: 5px;
-  background: red;
-  color:  #f5f5f7;
-  
-}
-* {
-  padding: 5px;
-  margin: 5px;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  line-height: 1.5;
-}
-#logo {
-    width: 18%;
-    display: block;
-}
-nav a:hover {
-    border-color: #4d5c3b;
-  text-decoration: none;
-  color: #f5f5f7;
-  font-weight: 400;
-  padding: 8px 10px;
-  border: 1px solid transparent;
-  border-radius: 12px;
-}
-#navselected {
-    color: #92ad70;
-}
-footer {
-  border-top: 1px solid rgba(245,245,247,.12);
-  padding: 18px 16px;
-  text-align: center;
-  color: rgba(245,245,247,.72);
-  }
-th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: fit-conent;
+    padding: 5px;
+    margin: 5px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    line-height: 1.5;
+    background-color: inherit;
+    color: inherit;
 }
 
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-form * {
-  margin: auto;
-  text-align: center;
+body {
+    background-color: #D4DE95;
+    color: #3D4127;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
 }
 
 .container {
-  display: grid;
-  grid-template-areas:
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+#logo {
+    width: 20%;
+    display: block;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #3D4127;
+    font-weight: 400;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-color: #3D4127;
+    border-radius: 12px;
+}
+
+.active {
+    color: #3D4127;
+    font-weight: 400;
+}
+
+footer {
+    border-top: 1px solid #3D4127;
+    padding: 18px 16px;
+    text-align: center;
+    color: #3D4127;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: fit-content;
+}
+
+tr:nth-child(even) {
+    background-color: #BAC095;
+}
+
+form * {
+    margin: auto;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
     'header header'
     'nav_bar nav_bar'
-    'main main-img'
+    'main main'
     'footer footer';
-  background-color: red;
 }
 
 .header {
-   grid-area: header; 
-   background-color: red;
+    grid-area: header;
+    background-color: #636B2F;
+    margin: 0;
+    padding: 10px 16px;
 }
+
 .nav_bar {
-   grid-area: nav_bar; 
-   background-color: red;
+    grid-area: nav_bar;
+    display: flex;
+    justify-content: right;
 }
+
 .main {
-  grid-area: main; 
-  background-color: red;
+    grid-area: main;
 }
+
 .main_img {
-   grid-area: main-img; 
-   background-color:red;
+    grid-area: main-img;
 }
+
 .footer {
-   grid-area: footer;
-   background-color:red;
+    grid-area: footer;
+    background-color: #636B2F;
+    margin: 0;
+    padding: 10px 16px;
+}
+
+#longIntro {
+    display: none;
+}
+
+#readLess {
+    display: none;
+}
+
+#purchaseForm {
+    display: none;
 }

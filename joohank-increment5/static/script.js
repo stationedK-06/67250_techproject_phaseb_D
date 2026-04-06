@@ -50,6 +50,29 @@ if (typeof $ !== 'undefined') {
     });
 }
 
+function initMap() {
+    const location = { lat: 40.4432, lng: -79.9428 };
+    const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: location,
+        mapId: '67250 ahahahahah',
+    });
+    const label = document.createElement('div');
+    label.textContent = 'MonoMuse Museum';
+    label.style.cssText = 'background:#636B2F;color:#fff;padding:4px 8px;border-radius:4px;font-size:13px;font-weight:500;';
+
+    new google.maps.marker.AdvancedMarkerElement({
+        position: location,
+        map: map,
+        content: label,
+        title: 'MonoMuse Museum',
+    });
+}
+
+function toggleNav() {
+    document.querySelector('.nav_bar').classList.toggle('responsive');
+}
+
 function showForm(date) {
     document.getElementById("purchaseForm").style.display = "block";
     var dateField = document.getElementById("selectedDate");
