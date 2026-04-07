@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse - Membership &amp; Donations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- jQuery v3.7.1: https://jquery.com/ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <h1>Membership &amp; Donations</h1>
+        </header>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="../views/explore.html">Explore</a>
+            <a href="../views/exhibitions.html">Exhibitions</a>
+            <a href="../views/buytickets.html">Buy Tickets</a>
+            <a href="../views/membership.html">Membership</a>
+            <a href="javascript:void(0)" class="hamburger" onclick="toggleNav()">&#9776;</a>
+        </nav>
+        <main class="main">
+
+            <section>
+                <h2>Become a Member</h2>
+                <p>MonoMuse membership supports our mission to make art and technology accessible to everyone.</p>
+
+                <h3>Membership Tiers</h3>
+                <p>Click a tier to see its benefits.</p>
+
+                <div class="accordion">
+
+                    <button class="accordion-btn" aria-expanded="false" aria-controls="tier-individual">
+                        Individual — $60 / year
+                    </button>
+                    <div class="accordion-panel" id="tier-individual">
+                        <ul>
+                            <li>10% discount at the museum shop</li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion-btn" aria-expanded="false" aria-controls="tier-dual">
+                        Dual — $100 / year
+                    </button>
+                    <div class="accordion-panel" id="tier-dual">
+                        <ul>
+                            <li>2 guest passes per year</li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion-btn" aria-expanded="false" aria-controls="tier-patron">
+                        Patron — $250 / year
+                    </button>
+                    <div class="accordion-panel" id="tier-patron">
+                        <ul>
+                            <li>4 guest passes per year</li>
+                        </ul>
+                    </div>
+
+                    <button class="accordion-btn" aria-expanded="false" aria-controls="tier-benefactor">
+                        Benefactor — $500 / year
+                    </button>
+                    <div class="accordion-panel" id="tier-benefactor">
+                        <ul>
+                            <li>Unlimited guest passes</li>
+                            <li>Name displayed in the museum lobby</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="cta-block">
+                    <p>Contact to set up your membership.</p>
+                    <a href="mailto:membership@monomuse.org" class="cta-btn">Join Now</a>
+                </div>
+            </section>
+
+            <section>
+                <h2>Make a Donation</h2>
+                <p>Every contribution, innovative exhibitions to life and keeps our programs free for low-income students.</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Giving Level</th>
+                            <th>Amount</th>
+                            <th>Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Friend</td>
+                            <td>$25</td>
+                            <td>Funds one student workshop session</td>
+                        </tr>
+                        <tr>
+                            <td>Supporter</td>
+                            <td>$100</td>
+                            <td>Sponsors materials for an interactive installation</td>
+                        </tr>
+                        <tr>
+                            <td>Patrion</td>
+                            <td>$500</td>
+                            <td>Underwrites a full community outreach event</td>
+                        </tr>
+                        <tr>
+                            <td>Visionary</td>
+                            <td>$1,000+</td>
+                            <td>Helps commission a new permanent exhibit</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="cta-block">
+                    <a href="mailto:donate@monomuse.org" class="cta-btn">Donate Now</a>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <p id="copyYear">MonoMuse. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

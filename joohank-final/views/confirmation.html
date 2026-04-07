@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse - Order Confirmation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear(); loadConfirmation();">
+    <div class="container">
+        <header class="header">
+            <h1>Order Confirmation</h1>
+        </header>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="../views/explore.html">Explore</a>
+            <a href="../views/exhibitions.html">Exhibitions</a>
+            <a href="../views/buytickets.html">Buy Tickets</a>
+            <a href="../views/membership.html">Membership</a>
+            <a href="javascript:void(0)" class="hamburger" onclick="toggleNav()">&#9776;</a>
+        </nav>
+        <main class="main">
+            <section class="confirmation-box">
+                <h2>Thank you for your order!</h2>
+                <p>Your tickets have been reserved. A simulated confirmation has been sent to your email. Please present this confirmation at the museum entrance.</p>
+                <div id="orderDetails"></div>
+                <nav class="confirmation-actions">
+                    <a href="../views/buytickets.html">Buy More Tickets</a>
+                    <a href="../index.html">Return Home</a>
+                </nav>
+            </section>
+        </main>
+        <footer class="footer">
+            <p id="copyYear">MonoMuse. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

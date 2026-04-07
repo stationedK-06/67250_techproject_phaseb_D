@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse - Exhibitions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <h1>Exhibitions</h1>
+        </header>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="../views/explore.html">Explore</a>
+            <a href="../views/exhibitions.html">Exhibitions</a>
+            <a href="../views/buytickets.html">Buy Tickets</a>
+            <a href="../views/membership.html">Membership</a>
+            <a href="javascript:void(0)" class="hamburger" onclick="toggleNav()">&#9776;</a>
+        </nav>
+        <main class="main">
+
+            <section>
+                <h2>Exhibition Gallery</h2>
+                <div class="slideshow" id="slideshow" aria-label="Exhibition gallery">
+                    <div class="slide active" role="img" aria-label="Digital Dreams exhibition — generative art installation with glowing algorithmic patterns">
+                        <img src="../static/images/explore_html/Museum Image.png" alt="Digital Dreams exhibition — generative art installation with glowing algorithmic patterns">
+                        <p class="slide-caption">Classic: vintage style </p>
+                    </div>
+                    <div class="slide" role="img" aria-label="Code and Canvas exhibition — projection mapping on a textured canvas wall">
+                        <img src="../static/images/explore_html/Museum Image2.png" alt="Code and Canvas exhibition — projection mapping on a textured canvas wall">
+                        <p class="slide-caption"> Culture: East</p>
+                    </div>
+                    <div class="slide" role="img" aria-label="Interactive Media Lab — visitors experimenting with creative coding stations">
+                        <img src="../static/images/explore_html/Museum Image3.png" alt="Interactive Media Lab — visitors experimenting with creative coding stations">
+                        <p class="slide-caption">Future</p>
+                    </div>
+                    <div class="slideshow-controls">
+                        <button class="slide-btn" id="prevSlide" aria-label="Previous slide">&#8592;</button>
+                        <span id="slideCounter" class="slide-counter">1 / 3</span>
+                        <button class="slide-btn" id="nextSlide" aria-label="Next slide">&#8594;</button>
+                    </div>
+                </div>
+            </section>
+
+            <article>
+                <h2>Exhibition 1: Classic + Vintage</h2>
+                <p>
+                    This exhibition explores how past artists drew their lifesytyle on the canvas. visitors can see every single touch of famous past artists.
+                </p>
+            </article>
+            <article>
+                <h2>Exhibition 2: Culture: East</h2>
+                <p>
+                    This exhibition explores East Asia's acient lifesytyle. visitors can explore the acient East Asia cultures and the replica of their tools.
+                </p>
+            </article>
+            <article>
+                <h2>Exhibition 3: Future</h2>
+                <p>
+                    This exhibition explores Modern futuristic paintings. Visitors can explore morden color themes and artists' intention behind the painting.
+                </p>
+            </article>
+        </main>
+        <footer class="footer">
+            <p id="copyYear">MonoMuse. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

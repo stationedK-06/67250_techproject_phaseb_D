@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MonoMuse - Explore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="../static/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Leaflet | BSD 2-Clause License | https://leafletjs.com -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body onload="addYear(); initMap()">
+    <div class="container">
+        <header class="header">
+            <h1>Explore</h1>
+        </header>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="../views/explore.html">Explore</a>
+            <a href="../views/exhibitions.html">Exhibitions</a>
+            <a href="../views/buytickets.html">Buy Tickets</a>
+            <a href="../views/membership.html">Membership</a>
+            <a href="javascript:void(0)" class="hamburger" onclick="toggleNav()">&#9776;</a>
+        </nav>
+        <main class="main">
+            <figure class="main_img">
+                <img src="../static/images/explore_html/Museum Image.png" alt="MonoMuse Museum">
+            </figure>
+            <iframe class="ifrm" src="https://www.youtube.com/embed/51G1a8ujdUc?si=Zm3CMoVKshNx4eHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>            <section>
+                <h2>Mission</h2>
+                <p>
+                    MonoMuse is dedicated to exploring the evolving relationship between art and time. Our mission is to inspire curiosity and creativity by showcasing historical and innovating arts.
+                </p>
+            </section>
+            <section>
+                <h2>Milestones</h2>
+                <ul>
+                    <li>2023: Expansion of the museum space and launch of international artist collaborations.</li>
+                    <li>2022: Launch of the Interactive Media Lab, allowing visitors to explore the exhibition online during coid-19</li>
+                    <li>2021: MonoMuse opens its doors with its first exhibition on classic art tour.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Visit Us</h2>
+                <h3>Hours of Operation</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday - Friday</td>
+                            <td>10:00 AM -  6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10:00 AM - 8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>11:00 AM - 11:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Location &amp; Directions</h3>
+                <p>4800 Forbes Ave, Pittsburgh, PA 15213</p>
+                <p>Accessible via bus routes 61A</p>
+                <div id="map"></div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p id="copyYear">MonoMuse. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
